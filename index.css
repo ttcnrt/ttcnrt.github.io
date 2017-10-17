@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper {
+	background-color: #f4f4f4;
+	font-family: 'Open Sans', sans-serif;
+	width: 340px;
+}
+.hidden {
+	display: none;
+}
+#headerContainer {
+	background-image: url("images/header.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#logo {
+	float: left;
+	padding: 5px;
+	width: 17%;
+	height: 17%;
+}
+#title {
+	display: inline;
+	font-size: 210%;
+}
+#logoTitleCentered {
+	text-align: center;
+}
+h3 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 35px;
+}
+#headerNav {
+	margin:0;
+	padding: 10px;
+	text-align: center;
+}
+#headerNav ul li {
+	display: inline;
+	margin: 0 10px 0 10px;
+	padding: 0 3px 0 3px;
+	font-size: 20px;
+	background-color: #f4f4f4;
+}
+#headerNav ul li a {
+	text-decoration: none;
+	color: black;
+}
+#headerNav ul li a :visited{
+	text-decoration: none;
+	color: black;
+}
+	/*Footer styles*/
+#footerContact {
+	background-color: #2b2a24;
+}
+#footerNav {
+	background-color: #2b2d33;
+}
+#footerSocial {
+	background-color: #493f3f;
+}
+footer section p, footer nav ul li {
+	padding: 0 0 5% 20%;
+	font-size: 20px;
+	color: #f4f4f4;
+}
+footer nav ul li a, footer section a {
+	color: #f4f4f4;
+}
+#mobileTel {
+	 padding-left: 20%;
+	 margin-bottom: 3%;
+	 font-size: 20px;
+	 color: #f4f4f4;
+ }
+footer nav ul li a:visited, footer section a:visited {
+	color: #f4f4f4;
+}
+footer section p {
+	padding-bottom: 5%;
+}
+.footerTitles, nav h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	padding: 2% 0 3% 10%;
+	color: #f4f4f4;
+}
+#numberMobile {
+	padding-bottom: 2%;
+}
+	/*End of footer styles*/
+main section h3 {
+	padding: 3% 0 0 10%;
+}
+main section p {
+	padding: 3% 10% 0 20%;
+}
+main section img {
+	padding: 0 10% 0 20%;
+}
