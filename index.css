@@ -46,10 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@media screen and (max-width: 600px) {
+
 .wrapper {
 	background-color: #f4f4f4;
 	font-family: 'Open Sans', sans-serif;
-	width: 340px;
+	/*width: 660px;*/
 }
 .hidden {
 	display: none;
@@ -62,32 +64,31 @@ table {
 }
 #logo {
 	float: left;
-	padding: 5px;
-	width: 17%;
-	height: 17%;
+	padding: 1.3vw;
+	width: 20%;
+	height: 20%;
 }
 #title {
 	display: inline;
-	font-size: 210%;
+	font-size: 12vw;
 }
 #logoTitleCentered {
 	text-align: center;
 }
 h3 {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 35px;
+	font-size: 8vw;
 }
 #headerNav {
-	margin:0;
 	padding: 10px;
 	text-align: center;
 }
 #headerNav ul li {
 	display: inline;
-	margin: 0 10px 0 10px;
-	padding: 0 3px 0 3px;
-	font-size: 20px;
-	background-color: #f4f4f4;
+	font-size: 7vw;
+	padding: 0 1% 0 1%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: .1em;
 }
 #headerNav ul li a {
 	text-decoration: none;
@@ -108,41 +109,45 @@ h3 {
 	background-color: #493f3f;
 }
 footer section p, footer nav ul li {
-	padding: 0 0 5% 20%;
-	font-size: 20px;
+	padding: 0 0 5vw 20vw;
+	font-size: 5vw;
 	color: #f4f4f4;
 }
 footer nav ul li a, footer section a {
 	color: #f4f4f4;
 }
 #mobileTel {
-	 padding-left: 20%;
+	 padding-left: 20vw;
 	 margin-bottom: 3%;
-	 font-size: 20px;
+	 font-size: 5vw;
 	 color: #f4f4f4;
  }
 footer nav ul li a:visited, footer section a:visited {
 	color: #f4f4f4;
 }
 footer section p {
-	padding-bottom: 5%;
+	padding-bottom: 5vw;
 }
 .footerTitles, nav h4 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 25px;
-	padding: 2% 0 3% 10%;
+	font-size: 7vw;
+	padding: 0 0 3% 10%;
 	color: #f4f4f4;
 }
 #numberMobile {
 	padding-bottom: 2%;
 }
 	/*End of footer styles*/
+	/*Main Styles*/
 main section h3 {
-	padding: 3% 0 0 10%;
+	padding: 3% 0 0 8%;
 }
 main section p {
-	padding: 3% 10% 0 20%;
+	font-size: 5vw;
+	padding: 3% 10% 0 15%;
 }
 main section img {
-	padding: 0 10% 0 20%;
+	padding: 0 10% 0 8%;
+	width: 77%;
+}
 }
