@@ -11,19 +11,21 @@
   </head>
   <body>
     <div class="wrapper">
-    <h1>Thyme To Eat - Home</h1>
+    <h1 class="hidden">Thyme To Eat - Home</h1>
     <header> <!--Header, navigation and image banner-->
-      <h2>Header</h2><!--display:none-->
-      <h3>Thyme To Eat</h3>
-      <img src="images/" alt="Header Image" width="1920" height="300">
-      <nav id="headerNav">
-        <h3>Navigation</h3><!--display:none-->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
+      <div id="headerContainer">
+        <h2 class="hidden">Header</h2><!--display:none-->
+        <img src="images/logo.png" alt="logo" id="logo">
+        <h3 id="title">Thyme To Cook</h3> <!--Title for page-->
+        <nav id="headerNav">
+          <h3 class="hidden">Navigation</h3><!--display:none-->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main> <!--Main content, Home: featured and popular recipes-->
       <h2>Main content</h2>
