@@ -57,7 +57,13 @@ table {
 	display: none;
 }
 #headerContainer {
-	background-image: url("images/header.jpg");
+	background:
+		linear-gradient(
+			to right,
+			rgba(66, 66, 66, .90),
+			rgba(255, 255, 255, 0.1)
+		),
+		url("images/header.jpg");
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -71,6 +77,7 @@ table {
 #title {
 	display: inline;
 	font-size: 12vw;
+	color: white;
 }
 #logoTitleCentered {
 	text-align: center;
