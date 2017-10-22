@@ -120,6 +120,9 @@ footer section p, footer nav ul li {
 	font-size: 5vw;
 	color: #f4f4f4;
 }
+footer section p {
+	padding-bottom: 0;
+}
 footer nav ul li a, footer section a {
 	color: #f4f4f4;
 }
@@ -132,17 +135,18 @@ footer nav ul li a, footer section a {
 footer nav ul li a:visited, footer section a:visited {
 	color: #f4f4f4;
 }
-footer section p {
-	padding-bottom: 5vw;
-}
-.footerTitles, nav h4 {
+.footerTitles, nav#footerNav h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 7vw;
-	padding: 0 0 3% 10%;
+	padding: 0 0 1% 10%;
 	color: #f4f4f4;
 }
 #numberMobile {
 	padding-bottom: 2%;
+}
+footer section section, footer section nav {
+	padding-top: 3%;
+	padding-bottom: 5%;
 }
 	/*End of footer styles*/
 	/*Main Styles*/
