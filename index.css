@@ -161,4 +161,47 @@ main section img {
 	padding: 0 10% 0 8%;
 	width: 77%;
 }
+/*sort box styles*/
+.removeItem {
+	display: inline;
+	width: 5vw;
+	height: 5vw;
+	padding: 0 0 0 15%;
+}
+#sortBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#sortCheckboxes {
+	display: flex-inline;
+	width: 40%;
+}
+#sortInputs {
+	display: flex-inline;
+	width: 60%;
+}
+#submitButton {
+	padding-left: 100%;
+}
+#contactUs {
+	width: 90%;
+	margin: 0 auto;
+}
+#formName, #formEmail {
+	width: 45%;
+	padding: 1% 0;
+}
+#formName {
+	margin-left: 5%;
+}
+#formSubject, #formBody {
+	width: 94%;
+	margin-top: 2%;
+	padding: 1% 2%;
+}
+#formBody {
+	resize: none;
+	margin-bottom: 3vh;
+}
 }

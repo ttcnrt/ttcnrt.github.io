@@ -28,19 +28,23 @@
         </div>
       </header>
       <main> <!--Main content, Home: featured and popular recipes-->
-        <h2>Main content</h2>
+        <h2 class="hidden">Main content</h2>
         <section>
           <h3>Choose your ingredients:</h3><br>
-          <form class="" action="index.html">
-            <img src="images/" alt="Remove Item" width="10" height="10">
-            <input type="text" name="Ingredient 1">
-            <img src="images/" alt="Remove Item" width="10" height="10">
-            <input type="text" name="Ingredient 2">
-            <img src="images/" alt="Remove Item" width="10" height="10">
-            <input type="text" name="Ingredient 3">
-            <input type="submit" value="Submit">
-            <input type="checkbox" value="Whitelist">Whitelist<br>
-            <input type="checkbox" value="Blacklist" checked>Blacklist<br>
+          <form id="sortBox" action="index.html">
+            <div id="sortInputs">
+              <img src="images/removeIcon" class="removeItem">
+              <input type="text" name="Ingredient 1"><br>
+              <img src="images/removeIcon" class="removeItem">
+              <input type="text" name="Ingredient 2"><br>
+              <img src="images/removeIcon" class="removeItem">
+              <input type="text" name="Ingredient 3"><br>
+              <input type="submit" value="Submit" id="submitButton">
+            </div>
+            <div id="sortCheckboxes">
+              <input type="checkbox" value="Whitelist">Whitelist<br>
+              <input type="checkbox" value="Blacklist">Blacklist<br>
+            </div>
           </form>
         </section>
         <section>
