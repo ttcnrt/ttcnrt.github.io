@@ -47,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 @media screen and (max-width: 667px) {
-
 .wrapper {
 	background-color: #f4f4f4;
 	font-family: 'Open Sans', sans-serif;
@@ -203,5 +202,121 @@ main section img {
 #formBody {
 	resize: none;
 	margin-bottom: 3vh;
+}
+}
+@media screen and (min-width: 668px) and (max-width: 1023) {
+.wrapper {
+	background-color: #f4f4f4;
+	font-family: 'Open Sans', sans-serif;
+}
+.hidden {
+	display: none;
+}
+#headerContainer {
+	background:
+		linear-gradient(
+			to right,
+			rgba(66, 66, 66, .90),
+			rgba(255, 255, 255, 0.1)
+		),
+		url("images/header.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#logo {
+	float: left;
+	padding: 1.3vw;
+	width: 20%;
+	height: 20%;
+}
+#title {
+	display: inline;
+	font-size: 12vw;
+	color: white;
+}
+#logoTitleCentered {
+	text-align: center;
+}
+h3 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 8vw;
+}
+#headerNav {
+	padding: 10px;
+	text-align: center;
+}
+#headerNav ul li {
+	display: inline;
+	font-size: 7vw;
+	padding: 0 1% 0 1%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: .1em;
+}
+#headerNav ul li a {
+	text-decoration: none;
+	color: black;
+}
+#headerNav ul li a :visited{
+	text-decoration: none;
+	color: black;
+}
+}
+@media screen and (min-width: 1024) {
+.wrapper {
+	background-color: #f4f4f4;
+	font-family: 'Open Sans', sans-serif;
+}
+.hidden {
+	display: none;
+}
+#headerContainer {
+	background:
+		linear-gradient(
+			to right,
+			rgba(66, 66, 66, .90),
+			rgba(255, 255, 255, 0.1)
+		),
+		url("images/header.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#logo {
+	float: left;
+	padding: 1.3vw;
+	width: 20%;
+	height: 20%;
+}
+#title {
+	display: inline;
+	font-size: 12vw;
+	color: white;
+}
+#logoTitleCentered {
+	text-align: center;
+}
+h3 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 8vw;
+}
+#headerNav {
+	padding: 10px;
+	text-align: center;
+}
+#headerNav ul li {
+	display: inline;
+	font-size: 7vw;
+	padding: 0 1% 0 1%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: .1em;
+}
+#headerNav ul li a {
+	text-decoration: none;
+	color: black;
+}
+#headerNav ul li a :visited{
+	text-decoration: none;
+	color: black;
 }
 }
