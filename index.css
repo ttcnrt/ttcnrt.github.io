@@ -170,11 +170,11 @@ main section img {
 	justify-content: space-between;
 }
 #sortCheckboxes {
-	display: flex-inline;
+	display: inline;
 	width: 40%;
 }
 #sortInputs {
-	display: flex-inline;
+	display: inline;
 	width: 60%;
 }
 #submitButton {
