@@ -17,7 +17,7 @@
           <h2 class="hidden">Header</h2><!--display:none-->
           <img src="images/logo.png" alt="logo" id="logo">
           <h3 id="title">Thyme<br> To Cook</h3> <!--Title for page-->
-          <nav id="headerNav">
+          <nav class="headerNav">
             <h3 class="hidden">Navigation</h3><!--display:none-->
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -35,20 +35,24 @@
             budget minded people. On the recipes page you can set the ingredients
             you want and we'll give you recipes that include them.</p>
         </section>
-        <section>
+        <section class="homeExamples">
           <h3>Featured and Popular Recipe</h3>
-          <p>This is the featured recipe chosen from the editors.</p>
-          <img srcset="
-            images/featured.jpg 1920w,
-            images/featured.jpg 960w,
-            images/featured.jpg 480w"
-          src="images/featured.jpg" alt="featured recipe">
-          <p>This is the most popular recipe chosen from users.</p>
-          <img srcset="
-            images/popular.jpg 1920w,
-            images/popular.jpg 960w,
-            images/popular.jpg 480w"
-          src="images/popular.jpg" alt="popular recipe">
+          <section class="homeFeatured">
+            <img srcset="
+              images/featured.jpg 1920w,
+              images/featured.jpg 960w,
+              images/featured.jpg 480w"
+            src="images/featured.jpg" alt="featured recipe">
+            <p>This is the featured recipe chosen from the editors.</p>
+          </section>
+          <section class="homePopular">
+            <img srcset="
+              images/popular.jpg 1920w,
+              images/popular.jpg 960w,
+              images/popular.jpg 480w"
+            src="images/popular.jpg" alt="popular recipe">
+            <p>This is the most popular recipe chosen from users.</p>
+          </section>
         </section>
       </main>
     <!--Footer, footer nav, social media, baisic contact-->
