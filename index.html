@@ -16,8 +16,8 @@
         <div id="headerContainer">
           <h2 class="hidden">Header</h2><!--display:none-->
           <img src="images/logo.png" alt="logo" id="logo">
-          <h3 id="title">Thyme<br> To Cook</h3> <!--Title for page-->
-          <nav id="headerNav">
+          <h3 id="title">Thyme To Cook</h3> <!--Title for page-->
+          <nav class="headerNav">
             <h3 class="hidden">Navigation</h3><!--display:none-->
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -35,25 +35,29 @@
             budget minded people. On the recipes page you can set the ingredients
             you want and we'll give you recipes that include them.</p>
         </section>
-        <section>
+        <section class="homeExamples">
           <h3>Featured and Popular Recipe</h3>
-          <p>This is the featured recipe chosen from the editors.</p>
-          <img srcset="
-            images/featured.jpg 1920w,
-            images/featured.jpg 960w,
-            images/featured.jpg 480w"
-          src="images/featured.jpg" alt="featured recipe">
-          <p>This is the most popular recipe chosen from users.</p>
-          <img srcset="
-            images/popular.jpg 1920w,
-            images/popular.jpg 960w,
-            images/popular.jpg 480w"
-          src="images/popular.jpg" alt="popular recipe">
+          <section class="homeFeatured">
+            <img srcset="
+              images/featured.jpg 1920w,
+              images/featured.jpg 960w,
+              images/featured.jpg 480w"
+            src="images/featured.jpg" alt="featured recipe">
+            <p>This is the featured recipe chosen from the editors.</p>
+          </section>
+          <section class="homePopular">
+            <img srcset="
+              images/popular.jpg 1920w,
+              images/popular.jpg 960w,
+              images/popular.jpg 480w"
+            src="images/popular.jpg" alt="popular recipe">
+            <p>This is the most popular recipe chosen from users.</p>
+          </section>
         </section>
       </main>
     <!--Footer, footer nav, social media, baisic contact-->
       <footer>
-        <section>
+        <section id="flexParent">
         <h2 class="hidden">Footer</h2><!--display:none-->
         <section id="footerContact">
           <h3 class="footerTitles">Contact Us</h3>
@@ -64,27 +68,6 @@
             <br>contact@thyme.com
           </p>
         </section>
-        <nav id="footerNav">
-          <h3 class="hidden">Footer navigation</h3><!--display:none-->
-          <h4>Home</h4>
-          <ul>
-            <li><a href="index.html">Welcome</a></li>
-            <li><a href="index.html">Examples</a></li>
-            <li><a href="index.html">About</a></li>
-          </ul>
-          <h4>Recipes</h4>
-          <ul>
-            <li><a href="recipes.html">Sort</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="recipes.html">About</a></li>
-          </ul>
-          <h4>About</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="about.html">Contact Us</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </nav>
         <section id="footerSocial">
           <h3 class="footerTitles">Social Media</h3>
             <p>
@@ -95,6 +78,33 @@
               <br>Instagram
             </p>
           </section>
+          <nav id="footerNav">
+            <h3 class="hidden">Footer navigation</h3><!--display:none-->
+            <section class="footerNavChilds">
+              <h4>Home</h4>
+              <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li><a href="index.html">About</a></li>
+              </ul>
+            </section>
+            <section class="footerNavChilds">
+              <h4>Recipes</h4>
+              <ul>
+                <li><a href="recipes.html">Sort</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="recipes.html">About</a></li>
+              </ul>
+            </section>
+            <section class="footerNavChilds">
+              <h4>About</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </section>
+          </nav>
         </section>
       </footer>
     </div>
