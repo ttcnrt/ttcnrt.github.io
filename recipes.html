@@ -47,7 +47,7 @@
             </div>
           </form>
         </section>
-        <section>
+        <section class="recipesReturned">
           <h3>Recipes Returned:</h3><br>
           <img srcset="
             images/exampleFood.jpg 1920w,
@@ -59,7 +59,7 @@
             smooth. Beat in the eggs one at a time, then stir in the vanilla. Diss
             olve baking soda in hot water. ... Bake for about 10 minutes in the pr
             eheated oven, or until edges are nicely browned.</p>
-          <img srcset="
+          <!--<img srcset="
             images/exampleFood.jpg 1920w,
             images/exampleFood.jpg 960w,
             images/exampleFood.jpg 480w"
@@ -68,14 +68,14 @@
             ees C). Cream together the butter, white sugar, and brown sugar until
             smooth. Beat in the eggs one at a time, then stir in the vanilla. Diss
             olve baking soda in hot water. ... Bake for about 10 minutes in the pr
-            eheated oven, or until edges are nicely browned.</p>
+            eheated oven, or until edges are nicely browned.</p>-->
         </section>
       </main>
       <!--Footer, footer nav, social media, baisic contact-->
       <footer>
-        <section>
+        <section id="flexParent">
         <h2 class="hidden">Footer</h2><!--display:none-->
-        <section id="footerContact">
+        <section id="footerContact" class="aboveNav">
           <h3 class="footerTitles">Contact Us</h3>
           <a href="tel:1-562-867-5309" id="mobileTel">1-562-867-5309</a>
           <p>
@@ -84,7 +84,7 @@
             <br>contact@thyme.com
           </p>
         </section>
-        <section id="footerSocial">
+        <section id="footerSocial" class="aboveNav">
           <h3 class="footerTitles">Social Media</h3>
             <p>
               Reddit
@@ -96,24 +96,30 @@
           </section>
           <nav id="footerNav">
             <h3 class="hidden">Footer navigation</h3><!--display:none-->
-            <h4>Home</h4>
-            <ul>
-              <li><a href="index.html">Welcome</a></li>
-              <li><a href="index.html">Examples</a></li>
-              <li><a href="index.html">About</a></li>
-            </ul>
-            <h4>Recipes</h4>
-            <ul>
-              <li><a href="recipes.html">Sort</a></li>
-              <li><a href="recipes.html">Recipes</a></li>
-              <li><a href="recipes.html">About</a></li>
-            </ul>
-            <h4>About</h4>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="about.html">Contact Us</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
+            <section class="footerNavChilds">
+              <h4>Home</h4>
+              <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li><a href="index.html">About</a></li>
+              </ul>
+            </section>
+            <section class="footerNavChilds">
+              <h4>Recipes</h4>
+              <ul>
+                <li><a href="recipes.html">Sort</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="recipes.html">About</a></li>
+              </ul>
+            </section>
+            <section class="footerNavChilds">
+              <h4>About</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </section>
           </nav>
         </section>
       </footer>

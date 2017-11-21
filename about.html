@@ -29,18 +29,18 @@
       </header>
       <main> <!--Main content, Home: featured and popular recipes-->
         <h2 class="hidden">Main content</h2>
-        <section>
+        <section class="homeAboutUs">
           <h3>About Us</h3>
           <img srcset="
           images/us.png 1920w,
           images/us.png 960w,
-          images/us.png480w"
-          src="images/us.png" alt="">
+          images/us.png 480w"
+          src="images/us.png" alt="Us">
           <p>We are a team of individuals who are looking to better the lives of budget minded people through better meal planning and exploring new meal options. We are college students and we know the struggles of meal planning and the boring meal choices that become defaults to make after a long day. We want to change that. </p>
         </section>
         <section>
           <h3>Contact Us</h3>
-          <form id="contactUs" action="index.html" method="post">
+          <form class="contactUs" action="index.html" method="post">
             <input type="email" name="Email" placeholder="Your Email" id="formEmail">
             <input type="text" name="Name" placeholder="Your Name" id="formName">
             <input type="text" name="Subject" placeholder="Subject" id="formSubject">
@@ -50,9 +50,9 @@
       </main>
       <!--Footer, footer nav, social media, baisic contact-->
       <footer>
-        <section>
+        <section id="flexParent">
         <h2 class="hidden">Footer</h2><!--display:none-->
-        <section id="footerContact">
+        <section id="footerContact" class="aboveNav">
           <h3 class="footerTitles">Contact Us</h3>
           <a href="tel:1-562-867-5309" id="mobileTel">1-562-867-5309</a>
           <p>
@@ -61,7 +61,7 @@
             <br>contact@thyme.com
           </p>
         </section>
-        <section id="footerSocial">
+        <section id="footerSocial" class="aboveNav">
           <h3 class="footerTitles">Social Media</h3>
             <p>
               Reddit
@@ -73,24 +73,30 @@
           </section>
           <nav id="footerNav">
             <h3 class="hidden">Footer navigation</h3><!--display:none-->
-            <h4>Home</h4>
-            <ul>
-              <li><a href="index.html">Welcome</a></li>
-              <li><a href="index.html">Examples</a></li>
-              <li><a href="index.html">About</a></li>
-            </ul>
-            <h4>Recipes</h4>
-            <ul>
-              <li><a href="recipes.html">Sort</a></li>
-              <li><a href="recipes.html">Recipes</a></li>
-              <li><a href="recipes.html">About</a></li>
-            </ul>
-            <h4>About</h4>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="about.html">Contact Us</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
+            <section class="footerNavChilds">
+              <h4>Home</h4>
+              <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li><a href="index.html">About</a></li>
+              </ul>
+            </section>
+            <section class="footerNavChilds">
+              <h4>Recipes</h4>
+              <ul>
+                <li><a href="recipes.html">Sort</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="recipes.html">About</a></li>
+              </ul>
+            </section>
+            <section class="footerNavChilds">
+              <h4>About</h4>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </section>
           </nav>
         </section>
       </footer>
