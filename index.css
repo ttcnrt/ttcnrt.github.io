@@ -664,7 +664,7 @@ main {
 /*Returned Recipes styles*/
 .recipesReturned {
 	display: grid;
-	grid-template-columns: 4% 46% auto 8%;
+	grid-template-columns: 8% 46% auto 8%;
 	grid-template-rows: 40px auto;
 }
 .recipesReturned h3 {
@@ -680,5 +680,7 @@ main {
 .recipesReturned p {
 	grid-column: 3/4;
 	grid-row: 2/3;
+	font-size: 2vw;
+	background-color: #efefef;
 }
 }
