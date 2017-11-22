@@ -592,6 +592,7 @@ main section p {
 	padding: 1% 10% 0 8%;
 }
 main section img {
+	width: 90%;
 	padding: 0 10% 0 8%;
 }
 main {
@@ -618,6 +619,7 @@ main {
 }
 /*Home page example styles*/
 .homeExamples {
+	margin-top: 1%;
 	display: grid;
 	grid-template-columns: 8% 40% 40% 8%;
 	grid-template-rows: 50px auto;
@@ -639,7 +641,7 @@ main {
 .homeAboutUs {
 	display: grid;
 	grid-template-columns: 4% 36% 25% 4%;
-	grid-template-rows: 60px 400px;
+	grid-template-rows: 60px auto;
 	grid-column-gap: 20px;
 }
 .homeAboutUs h3{
@@ -670,6 +672,7 @@ main {
 	grid-row: 1/2;
 }
 .recipesReturned img {
+	width: 80%;
 	grid-column: 2/3;
 	grid-row: 2/3;
 	padding: 0;
