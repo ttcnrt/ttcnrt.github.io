@@ -488,15 +488,15 @@ h3 {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 4vw;
 }
-.headerNav ul li  {
+.headerNav ul li a {
 	position: relative;
 	color: inherit;
 	text-decoration: none;
 }
-.headerNav ul li:hover {
+.headerNav ul li a:hover {
 	color: black;
 }
-.headerNav ul li:before {
+.headerNav ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -510,7 +510,7 @@ h3 {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-.headerNav ul li :hover:before {
+.headerNav ul li a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
