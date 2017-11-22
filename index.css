@@ -448,7 +448,9 @@ main section h3 {
 }
 main section p {
 	font-size: 2.5vw;
-	padding: 3% 10% 0 8%;
+	padding: 1%;
+	margin: 3% 10% 0 8%;
+	background-color: #efefef;
 }
 main section img {
 	padding: 0 10% 0 8%;
@@ -640,7 +642,7 @@ main {
 /*About Us Styles (from about tab)*/
 .homeAboutUs {
 	display: grid;
-	grid-template-columns: 4% 36% 25% 4%;
+	grid-template-columns: 4% 36% auto 4%;
 	grid-template-rows: 60px auto;
 	grid-column-gap: 20px;
 }
@@ -653,13 +655,13 @@ main {
 	grid-column: 2/3;
 	grid-row: 2/3;
 	padding: 0 0 0 8%;
-	justify-self: end;
 }
 .homeAboutUs p {
 	grid-column: 3/4;
 	grid-row: 2/3;
-	justify-self: start;
-	padding: 0;
+	padding: 1%;
+	font-size: 1.5vw;
+	background-color: #efefef;
 }
 /*Returned Recipes styles*/
 .recipesReturned {
