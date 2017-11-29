@@ -49,7 +49,7 @@ table {
 .headerContainer {
 	display: grid;
 	grid-template-columns: 6% 94%;
-	grid-template-rows: 50px auto;
+	grid-template-rows: 50px 60px;
 	justify-content: start;
 	background:
 		linear-gradient(
@@ -79,11 +79,7 @@ table {
 .headerNav {
 	grid-column: 2/3;
 	grid-row: 2/3;
-	padding: 5px;
-	margin-top: 10%;
-}
-.headerNav ul {
-	padding: 10px;
+	padding: 5px 0 5px 5px;
 }
 .headerNav ul li {
 	display: inline;
@@ -147,25 +143,23 @@ table {
 }
 .headerContainer {
 	grid-template-columns: 4% 96%;
-	grid-template-rows: 50px 60px;
+	grid-template-rows: 50px 50px;
 }
 #logo {
 	display: none;
-	grid-column: 3/4;
-	width: 90px;
 }
 #title {
-	font-size: 6vw;
+	font-size: 32px;
 	color: white;
 }
-.headerNav {
-	margin-top: 2%;
-	width: 100%;
+.headerNav ul {
+	display: flex;
+	text-align: center;
+	justify-content: space-evenly;
 }
 .headerNav ul li {
-	display: inline;
-	font-size: 5vw;
-	padding: 0 2% 0 2%;
+	font-size: 28px;
+	padding: 5px;
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: .1em;
 }
@@ -245,20 +239,31 @@ main section img {
 	padding: 0 0 0 15%;
 }
 .sortBox {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display: grid;
+	grid-template-areas:
+	"paddingL inputs ... paddingR"
+	"paddingL submit checkboxes paddingR";
+	grid-template-columns: 4% auto auto 4%;
+	grid-template-rows: 70px 30px;
 }
 .sortCheckboxes {
 	display: inline;
-	width: 40%;
+	grid-area: checkboxes;
 }
 .sortInputs {
-	display: inline;
-	width: 60%;
+	grid-area: inputs;
 }
-#submitButton {
-	padding-left: 100%;
+.submitButton {
+	grid-area: submit;
+	width: 60%;
+	justify-self: center;
+	border: 2px black;
+}
+.homeExamples p {
+	padding: 0 8%;
+}
+.homeExamples img {
+	padding-top: 10px;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 3vw;
@@ -286,19 +291,24 @@ and (max-width:1023px) {
 }
 .sortBox {
 	display: grid;
-	grid-template-columns: 8% 60% 24% 8%;
-	grid-template-rows: auto;
-}
-.sortInputs {
-	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-template-areas:
+	"paddingL inputs ... paddingR"
+	"paddingL submit checkboxes paddingR";
+	grid-template-columns: 4% auto auto 4%;
+	grid-template-rows: 70px 30px;
 }
 .sortCheckboxes {
-	grid-column-start: 3;
-	grid-column-end: 4;
+	display: inline;
+	grid-area: checkboxes;
 }
-#submitButton {
-	margin-left: 31%;
+.sortInputs {
+	grid-area: inputs;
+}
+.submitButton {
+	grid-area: submit;
+	width: 60%;
+	justify-self: center;
+	border: 2px black;
 }
 .removeItem {
 	padding: 0;
@@ -446,11 +456,13 @@ main section {
 .hidden {
 	display: none;
 }
+#title {
+	padding: 8px 0;
+}
 #logo {
 	grid-column: 1/2;
 	grid-row: 1/2;
-	padding: ;
-	margin-left: 25%;
+	margin: 15%;
 	width: 60px;
 }
 h3 {
@@ -547,7 +559,6 @@ footer nav ul li a:visited, footer section a:visited {
 	font-size: 1vw;
 }
 footer section section, footer section nav {
-	padding-top: 3%;
 	padding-bottom: 5%;
 }
 	/*End of footer styles*/

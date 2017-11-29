@@ -33,17 +33,17 @@
           <h3>Choose your ingredients:</h3><br>
           <form class="sortBox" action="index.html">
             <div class="sortInputs">
-              <img src="images/removeIcon" class="removeItem" alt="+">
+              <img src="images/removeIcon" class="removeItem" alt="-">
               <input type="text" name="Ingredient 1"><br>
-              <img src="images/removeIcon" class="removeItem" alt="+">
+              <img src="images/removeIcon" class="removeItem" alt="-">
               <input type="text" name="Ingredient 2"><br>
-              <img src="images/removeIcon" class="removeItem" alt="+">
-              <input type="text" name="Ingredient 3"><br>
-              <input type="submit" value="Submit" class="submitButton">
+              <img src="images/removeIcon" class="removeItem" alt="-">
+              <input type="text" name="Ingredient 3">
             </div>
+            <button class="submitButton">Submit</button>
             <div class="sortCheckboxes">
-              <input type="checkbox" value="Whitelist">Whitelist<br>
-              <input type="checkbox" value="Blacklist">Blacklist<br>
+              <input type="checkbox" value="Include">Include
+              <input type="checkbox" value="Exclude">Exclude
             </div>
           </form>
         </section>
