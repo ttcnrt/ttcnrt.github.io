@@ -48,7 +48,7 @@ table {
 }
 .headerContainer {
 	display: grid;
-	grid-template-columns: 6% 94%;
+	grid-template-columns: 4% 80% 16%;
 	grid-template-rows: 50px 60px;
 	justify-content: start;
 	background:
@@ -63,11 +63,10 @@ table {
 	background-position: center;
 }
 #logo {
-	grid-column: 1/2;
-	grid-row: 1/2;
-	padding: 1%;
-	margin-left: 8%;
+	grid-column: 3/4;
 	width: 80px;
+	margin: 15px 15px 0 0;
+	justify-self: end;
 }
 #title {
 	grid-column: 2/3;
@@ -132,11 +131,40 @@ table {
 #formBody:focus, #formEmail:focus, #formName:focus, #formSubject:focus {
 	border: 2px solid gray;
 }
+.sortBox {
+	display: grid;
+	grid-template-areas:
+	"paddingL inputs ... paddingR"
+	"paddingL submit checkboxes paddingR";
+	grid-template-columns: 4% auto auto 4%;
+	grid-template-rows: auto 40px;
+	margin-bottom: 20px;
+}
+.sortCheckboxes {
+	display: inline;
+	grid-area: checkboxes;
+}
+.sortInputs {
+	grid-area: inputs;
+}
+.sortInputs input {
+	padding: 5px;
+}
+.submitButton {
+	grid-area: submit;
+	width: 60%;
+	justify-self: center;
+	border: 2px black;
+	background-color: #493f3f;
+	color: white;
+}
+.removeItem {
+	padding: 0;
+}
 @media only screen and (max-width: 667px) {
 .wrapper {
 	background-color: #f4f4f4;
 	font-family: 'Open Sans', sans-serif;
-	/*width: 660px;*/
 }
 .hidden {
 	display: none;
@@ -238,27 +266,6 @@ main section img {
 	height: 5vw;
 	padding: 0 0 0 15%;
 }
-.sortBox {
-	display: grid;
-	grid-template-areas:
-	"paddingL inputs ... paddingR"
-	"paddingL submit checkboxes paddingR";
-	grid-template-columns: 4% auto auto 4%;
-	grid-template-rows: 70px 30px;
-}
-.sortCheckboxes {
-	display: inline;
-	grid-area: checkboxes;
-}
-.sortInputs {
-	grid-area: inputs;
-}
-.submitButton {
-	grid-area: submit;
-	width: 60%;
-	justify-self: center;
-	border: 2px black;
-}
 .homeExamples p {
 	padding: 0 8%;
 }
@@ -297,29 +304,9 @@ and (max-width:1023px) {
 	grid-template-columns: 4% auto auto 4%;
 	grid-template-rows: 70px 30px;
 }
-.sortCheckboxes {
-	display: inline;
-	grid-area: checkboxes;
-}
-.sortInputs {
-	grid-area: inputs;
-}
-.submitButton {
-	grid-area: submit;
-	width: 60%;
-	justify-self: center;
-	border: 2px black;
-}
-.removeItem {
-	padding: 0;
-}
 .headerContainer {
 	grid-template-columns: 4% 80% 16%;
 	grid-template-rows: 50px 60px;
-}
-#logo {
-	grid-column: 3/4;
-	width: 100px;
 }
 #title {
 	font-size: 34px;
@@ -457,13 +444,7 @@ main section {
 	display: none;
 }
 #title {
-	padding: 8px 0;
-}
-#logo {
-	grid-column: 1/2;
-	grid-row: 1/2;
-	margin: 15%;
-	width: 60px;
+	padding: 5px 0;
 }
 h3 {
 	font-family: 'Work Sans', sans-serif;
@@ -578,25 +559,6 @@ main section img {
 main {
 	margin-bottom: 1%;
 }
-.sortBox {
-	display: grid;
-	grid-template-columns: 8% 60% 24% 8%;
-	grid-template-rows: auto;
-}
-.sortInputs {
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
-.sortCheckboxes {
-	grid-column-start: 3;
-	grid-column-end: 4;
-}
-.submitButton {
-	margin-left: 31%;
-}
-.removeItem {
-	padding: 0;
-}
 /*Home page example styles*/
 .homeExamples {
 	margin-top: 1%;
@@ -664,5 +626,12 @@ main {
 	font-size: 18px;
 	padding: 2% 10%;
 	background-color: #efefef;
+}
+.sortInputs input {
+	width: 90%;
+	margin-top: 10px;
+}
+.submitButton {
+	margin-top: 10px;
 }
 }
